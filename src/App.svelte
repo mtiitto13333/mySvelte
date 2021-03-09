@@ -1,9 +1,24 @@
 <script>
 	export let name;
+	import Greeting from './Greeting.svelte';
+	import Math from './Math.svelte';
+	let user = {loggedIn: false}
+	function loggedinToggle(){
+		user.loggedIn = !user.loggedIn;
+	}
 </script>
 
 <main>
+{#if user.loggedIn}
+	<button on:click={loggedinToggle}>Log Out</button>
+	
 	<h1>Hello {name}!</h1>
+	<h2>wvgoieuvwgwilv</h2>
+{:else }
+	<button on:click={loggedinToggle}>Log In</button>
+{/if}	
+	<Greeting firstName= 'Maija' lastName='Tiitto' >
+	<Math />
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
