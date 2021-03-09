@@ -1,2 +1,2 @@
-# this is my svelte app wooo
+# this is my svelte app wooooo
 here it is!
