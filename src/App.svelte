@@ -17,7 +17,7 @@
 {:else }
 	<button on:click={loggedinToggle}>Log In</button>
 {/if}	
-	<Greeting firstName= 'Maija' lastName='Tiitto' >
+	<Greeting firstName= 'Maija' lastName='Tiitto'/>
 	<Math />
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
