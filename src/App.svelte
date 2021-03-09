@@ -1,4 +1,10 @@
 <script>
+	//STARTUP PROCESS
+	//1.Start Project "npm degit sveltejs/template project-folder-name"
+	//2.Direct to folder name
+	//3. "npm install"
+	//4. run the "npm run dev" in the command prompt to get 
+	//local host link for website viewing
 	export let name;
 	import Greeting from './Greeting.svelte';
 	import Math from './Math.svelte';
@@ -17,7 +23,7 @@
 {:else }
 	<button on:click={loggedinToggle}>Log In</button>
 {/if}	
-	<Greeting firstName= 'Maija' lastName='Tiitto'/>
+	<Greeting firstName= '' lastName=''/>
 	<Math />
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
